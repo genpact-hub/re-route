@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Fallback redirect -->
   <meta http-equiv="refresh" content="0; url=https://www.epfindia.gov.in">
-
-  <!-- Primary redirect -->
   <script>
     window.location.replace("https://www.epfindia.gov.in");
   </script>
