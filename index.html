@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url=https://www.epfindia.gov.in">
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+
   <script>
-    window.location.replace("https://www.epfindia.gov.in");
+    var params = new URLSearchParams(window.location.search);
+    var redirectUrl = params.get("url");
+    var defaultUrl = "https://www.genpact.com/";
+    if (redirectUrl && redirectUrl.trim() !== "") {
+      window.location.replace(decodeURIComponent(redirectUrl));
+    } else {
+      window.location.replace(defaultUrl);
+    }
   </script>
+
 </head>
-<body></body>
+<body>
+</body>
 </html>
